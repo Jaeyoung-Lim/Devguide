@@ -1,15 +1,14 @@
-# Simulation
+# 시뮬레이션
 
-Simulators allow PX4 flight code to control a computer modeled vehicle in a simulated "world". You can interact with this vehicle just as you might with a real vehicle, using *QGroundControl*, an offboard API, or a radio controller/gamepad.
+시뮬레이터는 PX4가 컴퓨터로 모델링 된 비행체를 가상의 "world"에서 제어할 수 있도록 합니다. 사용자는 실제 비행체와 같은 방식으로 "Qgroundcontrol", 오프보드 API, 조종기/게임패드를 이용하여 비행체와 상호작용할 수 있습니다.
 
-> **Tip** Simulation is a quick, easy, and most importantly, *safe* way to test changes to PX4 code before attempting to fly in the real world. It is also a good way to start flying with PX4 when you haven't yet got a vehicle to experiment with.
+> **Tip** 시뮬레이션은 빠르고 쉽게, 가장 중요한것은 안전하게 실제로 비행하기 전에 PX4 코드의 변경사항을 확인해볼 수 있는 방법입니다. 또, 아직 비행체를 소유하고 있지 않은 상태에서 처음으로 시도해볼 수 있는 좋은 시작점입니다.
 
-PX4 supports both *Software In the Loop (SITL)* simulation, where the flight stack runs on computer (either the same computer or another computer on the same network) and *Hardware In the Loop (HITL)* simulation using a simulation firmware on a real flight controller board.
+PX4는 *Software In the Loop (SITL)* 시뮬레이션, 즉 flight stack이 컴퓨터(같은 컴퓨터 혹은 네트워크에 있는 다른 컴퓨터)에서 실행되는 경우와 *Hardware In the Loop (HITL)*, 즉 실제 비행제어 보드에서 시뮬레이션을 돌리는 경우 모두를 지원합니다.
 
-Information about available simulators and how to set them up are provided in the next section. The other sections provide general information about how the simulator works, and are not required to *use* the simulators.
+다음 섹션에서는 지원하는 시뮬레이터와 시뮬레이터를 구성하는 방법에 대해 설명합니다. 다른 섹션들은 시뮬레이터가 어떻게 작동하는지 설명하며 시뮬레이터를 사용하는데에 반드시 필요한 정보들은 아닙니다.
 
-
-## Supported Simulators
+## 지원가능 시뮬레이터
 
 The following simulators work with PX4 for HITL and/or SITL simulation.
 
